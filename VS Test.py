@@ -1,7 +1,11 @@
-n, small, large = int(input()), 1, 1
-for i in range (1, n + 1):
-#    s = int(input())
-#    #if s > large:
-#        if small > large:
-#            large, small = s, larege
-print(1)
+count = 0
+p = 1
+for i in range(1, 6):
+    x = int(input())
+    if x > 0:
+        p = p * x
+        count = count + 1
+print(count)
+print(p)
+if count == 5:
+    print('NO')
