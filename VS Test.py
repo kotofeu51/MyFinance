@@ -1,11 +1,10 @@
-count = 0
-p = 1
-for i in range(1, 6):
-    x = int(input())
-    if x > 0:
-        p = p * x
-        count = count + 1
-print(count)
-print(p)
-if count == 5:
-    print('NO')
+a = int(input())
+for i in range(1, a + 1):
+    for x in range( 2 * i - 1):
+        if x < i:
+            print(x + 1, end= '')
+            n = 1
+        else:
+            print(x - n, end= '')
+            n += 1
+    print()
